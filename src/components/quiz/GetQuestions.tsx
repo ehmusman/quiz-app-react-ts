@@ -5,9 +5,9 @@ import GetSingleQuestion from './GetSingleQuestion';
 import QuestionsCount from './QuestionsCount'
 
 const  GetQuestions: React.FC = () =>{
-    const questions = useSelector(state => state.questions.questions)
-    const questionNumber = useSelector(state => state.questions.questionNumber)
-    const totalQuestions = questions.length;
+    const questions = useSelector(state => state.questions!.questions)
+    const questionNumber = useSelector(state => state.questions!.questionNumber)
+    const totalQuestions = questions?.length;
     const currentQuestion = questionNumber + 1;
     const remainingQuestions = totalQuestions - currentQuestion;
     return (

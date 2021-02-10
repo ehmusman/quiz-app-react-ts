@@ -1,4 +1,3 @@
-import { Action } from "redux";
 
 export interface questionsI {
 category: string,
