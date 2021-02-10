@@ -30,9 +30,6 @@ jobs:
         with:
           # Yarn command
           cmd: install # npm install/ yarn install
-      - name: root
-        run: npm install -g --unsafe-perm=true --allow-root
-
 
       - name: Creating build
         run: yarn build
